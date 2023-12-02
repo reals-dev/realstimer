@@ -2,12 +2,12 @@ local url = "https://api.openai.com/v1/chat/completions"
 local HTTP = game:GetService("HttpService")
 local rs = game.ReplicatedStorage
 local headers = {
-	["Authorization"] = "Bearer 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",
+	["Authorization"] = [REDACTED],
 }
 local webhook = require(rs.Modules.webhook)
 local ds = game:GetService("DataStoreService")
 local pastgpt = ds:GetDataStore("GPT-USES")
-local webhookurl = 'https://discord.com/api/webhooks/1114155635152519188/eHYaJ6_3eWqu5ZETDmepZx4JIXeXPE9_AfGwHSNSvGv8UoAM5thoIEh8nSamhImSO5i7'
+local webhookurl = [REDACTED]
 
 rs.messagerecieved.OnServerEvent:Connect(function(plr, text)
 	local body = HTTP:JSONEncode({
